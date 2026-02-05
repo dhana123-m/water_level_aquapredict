@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Civilian Dashboard - AquaPredict</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- LOGO -->
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="AquaPredict">
+    </div>
+
+    <!-- MENU -->
+    <ul class="sidebar-menu">
+      <li><a href="civdash.html">Home</a></li>
+      <li><a href="threshold.html">Threshold</a></li>
+      <li><a href="notification.html">Notifications</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="menu-toggle">☰</div>
+      <h2>AquaPredict</h2>
+      <div class="top-profile">👤</div>
+    </div>
+
+    <!-- INFO CARDS -->
+<div class="card-section">
+
+  <div class="info-card">
+    <h3>Date</h3>
+    <p id="dateValue">--</p>
+  </div>
+
+  <div class="info-card">
+    <h3>Water Level</h3>
+    <p id="waterValue">--</p>
+  </div>
+
+  <div class="info-card">
+    <h3>Time</h3>
+    <p id="timeValue">--</p>
+  </div>
+
+</div>
+
+<!-- RUN PREDICTION -->
+<div class="run-section">
+  <button onclick="runPredictionCivil()">Run Prediction</button>
+</div>
+
+<!-- GRAPH -->
+<div class="graph-section">
+  <canvas id="predictionChart"></canvas>
+</div>
+
+<!-- WATER SAVING SUGGESTIONS -->
+<div class="crop-section">
+  <h3>Water Saving Suggestions</h3>
+  <ul id="savingList">
+    <li>--</li>
+  </ul>
+</div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

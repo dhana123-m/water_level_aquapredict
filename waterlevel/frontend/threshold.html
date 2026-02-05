@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set Threshold - AquaPredict</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="AquaPredict">
+    </div>
+
+    <ul class="sidebar-menu">
+      <li><a href="farmdash.html">Home</a></li>
+      <li><a href="threshold.html">Threshold</a></li>
+      <li><a href="notification.html">Notifications</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="menu-toggle">☰</div>
+      <h2>AquaPredict</h2>
+      <div class="top-profile">👤</div>
+    </div>
+
+    <!-- THRESHOLD CARD -->
+    <div class="threshold-card">
+
+      <h3>Set Alert Threshold</h3>
+
+      <p class="hint-text">Suggested Threshold: 8 – 10 meters (Safe Range)</p>
+
+      <input type="number" id="thresholdInput" placeholder="Enter threshold value">
+
+      <button onclick="saveThreshold()">Save Threshold</button>
+
+      <p id="thresholdMsg"></p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

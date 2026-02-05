@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Authority Dashboard - AquaPredict</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="AquaPredict">
+    </div>
+
+    <ul class="sidebar-menu">
+      <li><a href="authdash.html">Home</a></li>
+      <li><a href="authprofile.html">Profile</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <div class="topbar">
+      <h2>AquaPredict</h2>
+    </div>
+
+    <div class="authority-card">
+
+      <h3>Search Borewell</h3>
+
+      <input type="number" id="borewellId" placeholder="Enter Borewell ID">
+
+      <button onclick="searchBorewell()">Search</button>
+      <button onclick="runAuthorityPrediction()">Run Prediction</button>
+
+<canvas id="predictionChart"></canvas>
+
+
+      <div class="result-box">
+        <p><b>Borewell ID:</b> <span id="r_id">--</span></p>
+        <p><b>User ID:</b> <span id="r_user">--</span></p>
+        <p><b>Latitude:</b> <span id="r_lat">--</span></p>
+        <p><b>Longitude:</b> <span id="r_lon">--</span></p>
+      </div>
+
+      <p id="authMsg"></p>
+
+    </div>
+
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

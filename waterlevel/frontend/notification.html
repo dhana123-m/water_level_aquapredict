@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notifications - AquaPredict</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="AquaPredict">
+    </div>
+
+    <ul class="sidebar-menu">
+      <li><a href="farmdash.html">Home</a></li>
+      <li><a href="threshold.html">Threshold</a></li>
+      <li><a href="notification.html">Notifications</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="menu-toggle">☰</div>
+      <h2>AquaPredict</h2>
+      <div class="top-profile">👤</div>
+    </div>
+
+    <!-- NOTIFICATION CARD -->
+    <div class="notification-card">
+
+      <h3>Notifications</h3>
+
+      <!-- Example Notification -->
+      <ul id="notificationList">
+  <li id="notifText">Loading notification...</li>
+</ul>
+
+
+      <!-- Language Selector -->
+      <label for="langSelect"><b>Voice Language:</b></label>
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ta">Tamil</option>
+      </select>
+
+      <br><br>
+
+      <button onclick="playVoiceAlert()">🔊 Play Voice Alert</button>
+
+      <audio id="ttsPlayer"></audio>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

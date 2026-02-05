@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authority Notifications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+  <div class="sidebar-logo">
+    <img src="images/logo.png">
+  </div>
+
+  <ul class="sidebar-menu">
+    <li><a href="authdash.html">Home</a></li>
+    <li><a href="authnotification.html">Notifications</a></li>
+    <li><a href="authprofile.html">Profile</a></li>
+    <li><a href="#" onclick="logout()">Logout</a></li>
+  </ul>
+
+</div>
+
+<!-- MAIN -->
+<div class="main-content">
+
+<div class="topbar">
+  <h2>AquaPredict</h2>
+</div>
+
+<div class="card-section authority-card">
+
+  <h3>Check Borewell Status</h3>
+
+  <input
+    type="number"
+    id="borewellIdInput"
+    placeholder="Enter Borewell ID">
+
+  <br><br>
+
+  <button onclick="loadAuthorityNotification()">
+    Check Status
+  </button>
+
+  <br><br>
+
+  <ul id="authorityNotificationList">
+    <li>--</li>
+  </ul>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

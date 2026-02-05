@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AquaPredict</title>
+
+  <!-- Splash CSS -->
+  <link rel="stylesheet" href="splash-light.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SPLASH SCREEN ================= -->
+
+<div id="splash">
+  <div class="content">
+
+    <!-- LEFT: LOGO -->
+    <div class="logo-area">
+      <img src="images/logo.png" class="logo" alt="AquaPredict Logo">
+    </div>
+
+    <!-- RIGHT: TEXT + WAVE -->
+    <div class="text-area">
+      <h1 class="title">AquaPredict</h1>
+
+      <p class="tagline">
+        DWLR-Based Smart Water Level Prediction System
+      </p>
+
+      <!-- WAVE LOADER -->
+      <div class="wave-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= LOGIN SCREEN ================= -->
+
+<div id="login-container" class="hidden bg-image">
+
+  <div class="login-card">
+
+    <!-- LEFT FORM -->
+    <div class="login-form">
+
+      <h2>Login</h2>
+
+      <!-- DO NOT CHANGE IDS -->
+      <input type="text" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+
+      <!-- DO NOT CHANGE onclick -->
+      <button onclick="login()">Login</button>
+
+      <p id="msg"></p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="login-image">
+      <img src="images/login.jpeg" alt="Login Image">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= JS FILES ================= -->
+
+<!-- Splash Controller -->
+<script src="splash.js"></script>
+
+<!-- Main Logic -->
+<script src="script.js"></script>
+
+</body>
+</html>
